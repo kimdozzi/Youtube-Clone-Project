@@ -1,0 +1,15 @@
+doctype html 
+html(lang="ko")
+    head 
+        title #{pageTitle} | Wetube
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+    body
+        header 
+
+            //- '='을 붙이고 뒤에 글을 작성하면 text가 아닌 variable로 인식된다.
+            h1=pageTitle
+        main
+            block content
+    footer
+        include partials/footer.pug
+    
